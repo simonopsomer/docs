@@ -163,7 +163,7 @@ behavior should now look like::
 
         public function slug(EntityInterface $entity)
         {
-            $config = $this->config();
+            $config = $this->_config();
             $value = $entity->get($config['field']);
             $entity->set($config['slug'], Text::slug($value, $config['replacement']));
         }
